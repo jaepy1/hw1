@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+	<!--분기설정 / ID, PW 빈칸 검사-->
+	<script>
+		function usertype() {
+
+			var fname = document.sub;
+
+			if (fname.id.value == "") {
+				alert("ID를 입력하세요.");
+				return;
+			}
+			if (fname.pwd.value == "") {
+				alert("PW를 입력하세요.");
+				return;
+			}
+			if (fname.pos.value == "prf") {
+				sub.action = "교수-메인.html"
+			}
+			else {
+				sub.action = "학생-메인.html"
+			}
+
+        }
+	</script>
+</head>
+<body>
+
+<h1>XX대 학사시스템</h1>
+사용자 구분 선택:
+
+<form method="post" name="sub" action="">
+	<select name="pos" size="1">
+		<option value="std">학생</option>
+		<option value="prf">교수</option>
+	</select><br>
+	ID : <input type="text" name="id"> <br>
+	PW : <input type="password" name="pwd"><br>
+	</p> <hr>
+	<input type="submit" value="로그인" onclick="usertype()">
+</form> 
+
+</body>
+</html>

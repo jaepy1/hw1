@@ -17,23 +17,152 @@
 </head>
 <body>
 
-<button class="button" style="width:350pt;height:40pt;"><p>[로그인 사용자 ID/이름 출력 SELECT ID] <br>이름 FROM교수 WHERE 교수 ID = @입력 ID;~~~~</p></button>
+    <button class="button" style="width:350pt;height:40pt;"><p>XXX<br>20039485</p></button>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<a href="교수-개인정보수정.html"><button class="button" style="width:100pt;height:40pt;"><p>개인 정보 수정</p></button></a>
-<a href="교수-지도학생조회.html"><button class="button" style="width:100pt;height:40pt;"><p>지도 학생 조회</p></button></a>
-<a href="교수-담당과목조회.html"><button class="button b" style="width:100pt;height:40pt;"><p>담당 과목 조회</p></button></a>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <a href="교수-개인정보수정.html"><button class="button" style="width:100pt;height:40pt;"><p>개인 정보 수정</p></button></a>
+    <a href="교수-지도학생조회.html"><button class="button" style="width:100pt;height:40pt;"><p>지도 학생 조회</p></button></a>
+    <a href="교수-담당과목조회.html"><button class="button b" style="width:100pt;height:40pt;"><p>담당 과목 조회</p></button></a>
+    <a href="login.html"><button class="button" style="width:100pt;height:40pt;"><p>처음으로</p></button></a>
 
-<br></br>
-<div style="width:30%;float:left;">
-  <button class="button" style="width:300pt;height:auto;"><p>수업차시정보</p></button>
-  <button class="button" style="width:300pt;height:auto;"><p>조회버튼 </p></button>
-  <p><button class="button" style="width:60pt;height:auto;"><p>조회</p></button></p>
-</div>
-<div style="width:50%;float:right;">
-<p><button class="button" style="width:300pt;height:auto;"><p>해당차시 수업 출석 통계 출력</p></button></p>
-<p><button class="button" style="width:300pt;height:auto;"><p>학생 이름과 그 출석 처리 정보 수정</p></button></p>
-<button class="button" style="width:60pt;height:auto;"><p>수정</p></button>
-</div>
+    <br></br>
+    <div style="width:30%;float:left;">
+        <button class="button" style="width:300pt;height:auto;"><p>수업차시정보</p></button>
+        <table border="1" width="490pt">
+            <tr bgcolor="#A4A4A4">
+                <th>선택</th>
+                <th>수업차수</th>
+                <th>수업날짜</th>
+                <th>보강여부</th>
+                <th>수업형식</th>
+                
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td>2022-11-12</td>
+                <td>N</td>
+                <td>인터넷강의</td>
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td> 41</td>
+                <td> 3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td> 41</td>
+                <td> 3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td> 41</td>
+                <td> 3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td> 41</td>
+                <td> 3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td> 41</td>
+                <td> 3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><input name="subject_name" input type="checkbox" value="1" onclick="nomultiple(this)"></td>
+                <td>1</td>
+                <td> 41</td>
+                <td> 3</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p><button class="button" style="width:60pt;height:auto;"><p>조회</p></button></p>
+    </div>
+    <div style="width:70%;float:right;">
+        해당차시 수업 출석 통계 출력
+        <!--<p><button class="button" style="width:300pt;height:auto;"><p>해당차시 수업 출석 통계 출력</p></button></p>-->
+        <table border="1" width="390pt">
+            <tr bgcolor="#A4A4A4">
+                <th>수업날짜</th>
+                <th>정원</th>
+                <th>출석</th>
+                <th>결석</th>
+                <th>지각</th>
+            </tr>
+            <tr>
+                <td>2022-11-12</td>
+                <td>30</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+        </table>
+        출석 처리 정보 수정
+        <!--<p><button class="button" style="width:300pt;height:auto;"><p>학생 이름과 그 출석 처리 정보 수정</p></button></p>-->
+        <table border="1" width="390pt">
+            <tr bgcolor="#A4A4A4">
+                <th>학번</th>
+                <th>이름</th>
+                <th>출결처리</th>
+            </tr>
+            <tr>
+                <td>20221434</td>
+                <td>정동현</td>
+                <td>
+                    <select name="status" size="1">
+                        <option selected="selected">결석</option>
+                        <option>지각</option>
+                        <option>출석</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>20221434</td>
+                <td>정동현</td>
+                <td>
+                    <select name="status" size="1">
+                        <option selected="selected">결석</option>
+                        <option>지각</option>
+                        <option>출석</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>20201434</td>
+                <td>권준용</td>
+                <td>
+                    <select name="status" size="1">
+                        <option selected="selected">결석</option>
+                        <option>지각</option>
+                        <option>출석</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>20211434</td>
+                <td>오재표</td>
+                <td>
+                    <select name="status" size="1">
+                        <option selected="selected">결석</option>
+                        <option>지각</option>
+                        <option>출석</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <button class="button" style="width:60pt;height:auto;"><p>수정</p></button>
+    </div>
 </body>
 </html>

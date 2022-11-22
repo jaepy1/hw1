@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>개인정보수정</title>
+    <script>
+        function alarm1() {
+            alert("정보가 수정되었습니다.");
+        }
+        function alarm2() {
+            alert("수정을 취소합니다.");
+            window.location.reload();
+        }
+    </script>
 <style>
 .button {
   background-color: #A4A4A4;
@@ -14,23 +23,34 @@
 }
 .b {background:#FA8258;}
 </style>
+
 </head>
 <body>
-<button class="button" style="width:350pt;height:40pt;"><p>[로그인 사용자 ID/이름 출력 SELECT ID] <br>이름 FROM교수 WHERE 교수 ID = @입력 ID;~~~~</p></button>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<a href="교수-개인정보수정.html"><button class="button b" style="width:100pt;height:40pt;"><p>개인 정보 수정</p></button></a>
-<a href="교수-지도학생조회.html"><button class="button" style="width:100pt;height:40pt;"><p>지도 학생 조회</p></button></a>
-<a href="교수-담당과목조회.html"><button class="button" style="width:100pt;height:40pt;"><p>담당 과목 조회</p></button></a>
-<br></br>
+    <!--로그인에서 가져온 정보 표시 하도록 하는 것을 구상중에 있음-->
+    <button class="button" style="width:350pt;height:40pt;"><p>XXX<br>20039485</p></button>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <a href="교수-메인.html"><button class="button b" style="width:100pt;height:40pt;"><p>개인 정보 수정</p></button></a>
+    <a href="교수-지도학생조회.html"><button class="button" style="width:100pt;height:40pt;"><p>지도 학생 조회</p></button></a>
+    <a href="교수-담당과목조회.html"><button class="button" style="width:100pt;height:40pt;"><p>담당 과목 조회</p></button></a>
+    <a href="login.html"><button class="button" style="width:100pt;height:40pt;"><p>처음으로</p></button></a>
+    <br></br>
+
+    <!--개인정보 및 수정을 위함 / 기본 value는 기존 설정된 개인 정보의 값으로-->
+    이름 : XXX &emsp; 소속학과 : 정보통신공학과 <br />
+    PW : <input type="password" name="pwd" value=""><br>
+    생년 월일 : <input type="date" name="birth_date" min="1900-01-01" value="2000-10-21"><br>
+    대표 연락처 : <input type="tel" name="p_tel" value="010-1234-5673" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" /> <br>
+    이메일 주소 : <input type="email name="p_mail" value="database@naver.com"/><br />
 
 
-<button class="button" style="width:740pt;height:350pt;"><p>교수정보~~~~~~~~~~~~~</p></button>
-<br></br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;
-<button class="button" style="width:120pt;height:50pt;">수정</button>&emsp;
-<button class="button" style="width:120pt;height:50pt;">취소</button>
+    <!--<button class="button" style="width:740pt;height:350pt;"><p>교수정보~~~~~~~~~~~~~</p></button>-->
+    <br></br>
+    <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;-->
+
+    <button class="button" style="width:120pt;height:50pt;" onclick=alarm1()>수정</button>&emsp;
+    <button class="button" style="width:120pt;height:50pt;" onclick=alarm2()>취소</button>
 
 </body>
 </html>

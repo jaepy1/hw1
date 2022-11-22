@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>개인정보수정</title>
+    <script>
+        //function alarm1() {
+        //    alert("정보가 수정되었습니다.");
+        //}
+        function alarm2() {
+            window.history.back()
+        }
+
+    </script>
+    <style>
+        .button {
+            background-color: #A4A4A4;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .b {
+            background: #FA8258;
+        }
+    </style>
+
+</head>
+<body>
+    <!--로그인에서 가져온 정보 표시 하도록 하는 것을 구상중에 있음-->
+    <button class="button" style="width:350pt;height:40pt;"><p>XXX<br>20039485</p></button>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <a href="교수-메인.html"><button class="button" style="width:100pt;height:40pt;"><p>개인 정보 수정</p></button></a>
+    <a href="교수-지도학생조회.html"><button class="button b" style="width:100pt;height:40pt;"><p>지도 학생 조회</p></button></a>
+    <a href="교수-담당과목조회.html"><button class="button" style="width:100pt;height:40pt;"><p>담당 과목 조회</p></button></a>
+    <a href="login.html"><button class="button" style="width:100pt;height:40pt;"><p>처음으로</p></button></a>
+    <br></br>
+
+    <!--개인정보 및 수정을 위함 / 기본 value는 기존 설정된 개인 정보의 값으로-->
+    <input type="hidden" id="r_co" value="6" oninput="gradecal()">
+    이름 : XXX &emsp;
+    학년 : 3 &emsp;
+    소속학과 : 정보통신공학과 <br />
+    생년 월일 : <input type="date" name="birth_date" min="1900-01-01" value="2000-10-21" disabled><br>
+    연락처 : <input type="tel" name="s_tel" value="010-1234-5673" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" disabled /> <br>
+    이메일 주소 : <input type="email name="s_mail" value="database@naver.com" disabled /><br />
+    등록 년도 : 2020 &emsp; 최종 등록 날짜 : <input type="date" name="r_date" min="1900-01-01" value="2020-10-21" disabled><br>
+    등록 학기 : <input type="tel" name="s_tel" value="22-2" pattern="[0-9]{2}-[0-9]{1}" disabled /> <br>
+    등록 횟수 : <input type="text" id="r_count" name="r_count" value="6" disabled><br>
+    <!--<button class="button" style="width:740pt;height:350pt;"><p>교수정보~~~~~~~~~~~~~</p></button>-->
+    <br></br>
+    <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;-->
+
+    <button class="button" style="width:120pt;height:50pt;" onclick=alarm2()>뒤로</button>
+
+</body>
+</html>
